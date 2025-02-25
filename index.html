@@ -1,73 +1,60 @@
-html
-Copy
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Link Insertion Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-         }
-        h1 {
-            text-align: center;
-        }
-        .code-container {
-            background: #144;
-            padding: 14px;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        pre {
-            background: #144;
-            color: #144;
-            padding: 10px;
-            border-radius: 4px;
-            overflow-x: auto;
-        }
-        header {
-            font-family: Montserrat, sans-serif;
-            background-color: #255;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
             padding: 20px;
-            text-align: center;
+            background-color: #f4f4f4;
         }
-        footer {
-            background-color: #255;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .box {
             width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .box input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .box input[type="text"]:focus {
+            outline-color: #4f9aff;
+            border-color: #4f9aff;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Claire's Coding Dashboard </h1>
-</header>
-
-<main>
-    <p> Check out my coding projects below!</p>
-</main>
-<div class="code-container">
-    <h2>Example Code 2>/h2>
-    <pre>
-        <code>
-
-<footer>
-    <p>&copy; 2025 My Coding Page</p>
-</footer>
+    <h1>Insert Your Links</h1>
+    <div class="container">
+        <div class="box">
+            <label for="link1">Link 1:</label>
+            <input type="text" id="link1" name="link1" placeholder="Enter your link here">
+        </div>
+        <div class="box">
+            <label for="link2">Link 2:</label>
+            <input type="text" id="link2" name="link2" placeholder="Enter your link here">
+        </div>
+        <div class="box">
+            <label for="link3">Link 3:</label>
+            <input type="text" id="link3" name="link3" placeholder="Enter your link here">
+        </div>
+    </div>
 
 </body>
 </html>
+
