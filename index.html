@@ -1,19 +1,58 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-   <title style= "color: white; text-align: center;"> Claire Lewis's Coding Page</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Green Page with Links</title>
+    <style>
+        body {
+            background-color: #d3f9d8; /* Light green background */
+            color: white; /* White text */
+            font-family: Arial, sans-serif; /* Simple font */
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .link-box {
+            background-color: #7ac142; /* Slightly darker green for boxes */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: calc(33% - 40px); /* Three boxes in a row */
+            text-align: center;
+        }
+        .link-box a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .link-box a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
 </head>
-
-<body style="background-color:#5a9875;">
-
-    <h1>Welcome to my website!</h1>
-
-   <p> Trinket </p>
-  
-
+<body>
+    <h1>Welcome to the Link Page</h1>
+    <div class="container">
+        <div class="link-box">
+            <a href="https://www.example.com" target="_blank">Link 1</a>
+        </div>
+        <div class="link-box">
+            <a href="https://www.example.com" target="_blank">Link 2</a>
+        </div>
+        <div class="link-box">
+            <a href="https://www.example.com" target="_blank">Link 3</a>
+        </div>
+    </div>
 </body>
-
 </html>
